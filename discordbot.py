@@ -18,6 +18,10 @@ async def ping(ctx):
 @bot.command()
 async def neko(ctx):
     await ctx.send('にゃーん')
+    
+@bot.command()
+async def aho(ctx):
+    await ctx.send('にょーん')    
 
         
 
