@@ -36,20 +36,7 @@ async def on_message(message):
     # カテゴリチャンネルのリストを取得して表示
     if message.content == '/category_channels':
         print(message.guild.categories)    
-        
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
- 
-    if message.content.startswith('/member_list'):
- 
-        menber_list = []
- 
-        for a in client.get_all_members():
-            menber_list.append(a.name)
- 
-        await message.channel.send(menber_list)        
 
+        
 
 bot.run(token)
