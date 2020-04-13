@@ -33,12 +33,12 @@ async def 月曜日(ctx):
     await ctx.send('数学A　体育　政治経済')
 
 
-# @client.event
-# async def on_message(message):
-#     if message.author.bot:
-#         return
-#     if message.content == '/neko':
-#         await message.channel.send('にゃーん')
+@bot.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if message.content == '/あいうえお':
+        await message.channel.send('かきくけこ')
 
 
 bot.run(token)
